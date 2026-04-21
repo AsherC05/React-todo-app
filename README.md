@@ -1,16 +1,34 @@
-# React + Vite
+# Individual Todo List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight, responsive Todo application built with **React** and **Vite**. This project allows users to manage their daily tasks efficiently through a clean, interactive interface.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Add Tasks**: Quickly add new items to your list using the input field or the "Enter" key.
+- **Track Progress**: Toggle task completion status with a checkbox.
+- **Delete Tasks**: Remove tasks instantly when they are no longer needed.
+- **Persistent State**: Managed via React hooks for a reactive user experience.
+- **Clean UI**: Semantic HTML structure with dedicated sections for the header and task management.
 
-## React Compiler
+## 🛠️ Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React**: Frontend library for building the user interface.
+- **Vite**: Modern frontend tooling for a fast development environment.
+- **CSS3**: Custom styling for task completion states (line-through effects).
 
-## Expanding the ESLint configuration
+## 📂 Logic Summary
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The application core resides in `App.jsx` and utilizes the following logic:
+
+- **State Management**: Uses `useState` to track the array of todo objects and the current input text.
+- **Dynamic ID Generation**: Uses `Date.now()` to ensure each new task has a unique identifier.
+- **Array Methods**: 
+    - `.filter()` is used for task deletion.
+    - `.map()` is used for both rendering the list and toggling the `completed` boolean.
+- **Event Handling**: Includes a `handleKeyPress` function to improve user UX by allowing "Enter" to submit.
+
+## 🏁 Getting Started
+
+1. **Clone the repository**:
+   ```bash
+   git clone [https://github.com/AsherC05/React-todo-app.git](https://github.com/AsherC05/React-todo-app.git)
